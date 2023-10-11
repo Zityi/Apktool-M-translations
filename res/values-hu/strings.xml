@@ -3,6 +3,7 @@
 
     <string name="app_name">Apktool M</string>
     <string name="click_once_more">Nyomja meg újra a kilépéshez!</string>
+    <string name="click_once_more2">Kattintson újra a bezáráshoz</string>
     <string name="all_files_saved">Minden fájl mentve!</string>
 	<string name="storage_error">Adjon tárhely hozzáférést az alkalmazásnak!</string>
 
@@ -11,8 +12,14 @@
     <string name="bks">Kulcstár (BKS)</string>
     <string name="pk8">pk8+x509.pem</string>
 
+	<string name="beta" translatable="false">β</string>
+	<string name="dot" translatable="false">•</string>
+	<string name="rarrow" translatable="false">→</string>
+	<string name="lock_icon" translatable="false">&#xec61;</string>
+	<string name="block_icon" translatable="false">&#xec41;</string>	
 	<string name="base64">Base64: %s</string>
 	<string name="base64_sign">Az aláírás Base64 kódja: %s</string>
+    <string name="base64_cert">A tanúsítvány Base64 kódja: %s</string>
     <string name="yes">Igen</string>
     <string name="no">Nem</string>
     <string name="ok">Ok</string>
@@ -59,6 +66,26 @@
     <string name="total">Összesen</string>
     <string name="dexs_info">Dex információk</string>
     <string name="dex_limit_info">A metódusok/mezők maximális száma a dex-ben: %d</string>
+    <string name="hide">Elrejtés</string>
+    <string name="unsupported_android">Nem támogatott az Ön Android verziójában!</string>
+    <string name="reset_fab">Visszaállítja a lebegő gomb helyzetét?</string>
+    <string name="kill_sign">Aláírás-ellenőrzés eltávolítása</string>
+    <string name="kill_sign_advanced">Továbbfejlesztett módszer</string>
+    <string name="kill_sign_orig">Az eredeti apk hozzáadása az integritás ellenőrzéséhez</string>
+    <string name="kill_sign_exists">A hook már hozzá lett adva</string>
+    <string name="kill_sign_by_orig">Aláírás készítése a megadott eredetiről</string>
+    <string name="kill_sign_notice">A jelenlegi funkcióval feldolgozott alkalmazás nem fog működni az 5-nél régebbi Android verziókon!!</string>
+    <string name="compare_text">Szöveg összehasonlítása</string>
+    <string name="files_identical">A fájlok azonosak!</string>
+    <string name="delete_files_cm">Fájlok törlése tömörítés után</string>
+    <string name="dec_indent">Behúzás csökkentése</string>
+    <string name="inc_indent">Behúzás növelése</string>
+    <string name="search_class">A(z) \"%s\" class keresése</string>
+    <string name="checksums_original">Ellenőrző összegek cseréje az eredetiből</string>
+    <string name="clear">Törlés</string>
+    <string name="no_data">nincs elérhető adat</string>
+    <string name="monochrome">Monokróm</string>
+    <string name="smali_help">Smali súgó</string>
 
     <string name="go_back">Vissza a szülőkönyvtárba</string>
     <string name="sort">Rendezési mód</string>
@@ -143,6 +170,7 @@
 	<string name="mark_file">Fájl megjelölése</string>
 	<string name="create_logcat">LogCat fájl létrehozása</string>
 	<string name="aapts33">Letöltés SDK 33-hoz</string>
+    <string name="aapts33_warn">Készüljön fel arra, hogy az SDK 33 fájljai lassúak és instabilak lehetnek!</string>    
 	<string name="aapt2_dens">Képernyősűrűség beállítása</string>
 	<string name="aapt2_configs">Konfigurációk beállítása</string>
 	<string name="aapt2_dens_info">&lt;b>Vesszővel elválasztott&lt;/b> lista azokról a képernyősűrűségekről, amelyekre az APK optimalizálva lesz. Az összes olyan erőforrás, amely a megadott sűrűségű eszközökön nem lenne felhasználva, ki lesz véve az APK-ból.</string>
@@ -242,6 +270,8 @@
     <string name="delete">Törlés</string>
 	<string name="send">Küldés</string>
 	<string name="complete">Kész</string>
+    <string name="complete_msg">Elkészült, eredeti(ek) mentve: \"%s\"</string>
+    <string name="complete_msg2">Elkészült, fájl(ok) mentve: \"%s\"</string>	
 	<string name="success">Sikeres</string>
 	<string name="successf">Sikeres: %s</string>
 	<string name="success_of">%2$d - %1$d sikeres!</string>
@@ -490,7 +520,19 @@
 	<string name="editor_magnifier_summary">Nagyító a kurzor mozgatásakor</string>
     <string name="old_picker">Régi színválasztó</string>
     <string name="old_picker_summary">Régi színválasztó párbeszédpanel</string>
-
+    <string name="floating_button">Lebegő gomb</string>
+    <string name="floating_button_summary">A fájlok elrejtése gomb megjelenítése, ha a fájlok rögzítve vannak</string>
+    <string name="tooltips">Eszköztippek a szerkesztőben</string>
+    <string name="tooltips_summary">Eszköztippek smali és xml esetén</string>
+    <string name="keep_structure">Mappaszerkezet megtartása</string>
+    <string name="keep_structure_summary">Az eredetihez hasonlóan próbálja megtartani a mappaszerkezetet. Rendszeralkalmazások esetén hasznos</string>
+    <string name="keep_modified_time">Módosítási idő megtartása</string>
+    <string name="keep_modified_time_summary">Próbálja megtartani a fájlok és mappák módosítási idejét, ha lehetséges.</string>
+    <string name="open_apk">Apk fájlok megnyitása</string>
+    <string name="open_apk_summary">Apk fájlok megnyitása más alkalmazásokból a programban</string>
+    <string name="imgs_backup">Az eredeti kép mentése</string>
+    <string name="imgs_backup_summary">Mentse el az eredeti képet a(z) \"%1$s\", \"%2$s\", \"%3$s\" és \"%4$s\" funkciókkal való feldolgozás során</string>
+	
     <string name="key_type">Kulcs típusa:</string>
     <string name="key_path">Kulcs helye:</string>
     <string name="cert_path">Tanúsítvány helye:</string>
@@ -542,7 +584,7 @@
 	<string name="mextract_zip_to">Kicsomagolás \"%s\-ként"</string>
 	<string name="mplease_wait">Kis türelmet...</string>
 	
-	<string name="split">Split</string>
+	<string name="split">Felosztás</string>
 	<string name="mcompress">Tömörít</string>
 	<string name="mcompression">Tömörítés</string>
 	
@@ -616,6 +658,8 @@
 	<string name="github_summary">Források a program fordításához a GitHub-on</string>
 	
 	<string name="search_call">Hívások keresése</string>
+    <string name="search_call_get">Beérkező hívások keresése</string>
+    <string name="search_call_put">Kezdeményezett hívások keresése</string>	
 	<string name="search_over">Felülbírálások keresése</string>
 	<string name="search_files">Fájlok keresése</string>
 	<string name="search_result">Keresési eredmény</string>
@@ -729,6 +773,7 @@
 	<string name="mtr_del_array">Tömb törlése</string>
 	<string name="mtr_sure">Biztos benne?</string>
 	<string name="mtr_trans_smali">Smali fordítása</string>
+    <string name="mtr_trans_xml">Xml fordítása</string>	
 	<string name="mtr_no_trans">A karakterláncot nem kell lefordítani!</string>
     <string name="mtr_first_notrans">Először nem lett lefordítva</string>
 	
