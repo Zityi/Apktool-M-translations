@@ -5,6 +5,232 @@
 		<item>Szó szerinti értékek</item>
 		<item>Primitív adattípusok</item>
 	</string-array>
+	<string-array name="smali_help_common_names">
+		<item>nop</item>
+		<item>move vA, vB</item>
+		<item>move/from16 vAA, vBBBB</item>
+		<item>move/16 vAAAA, vBBBB</item>
+		<item>move-wide vA, vB</item>
+		<item>move-wide/from16 vAA, vBBBB</item>
+		<item>move-wide/16 vAAAA, vBBBB</item>
+		<item>move-object vA, vB</item>
+		<item>move-object/from16 vAA, vBBBB</item>
+		<item>move-object/16 vAAAA, vBBBB</item>
+		<item>move-result vAA</item>
+		<item>move-result-wide vAA</item>
+		<item>move-result-object vAA</item>
+		<item>move-exception vAA</item>
+		<item>return-void</item>
+		<item>return vAA</item>
+		<item>return-wide vAA</item>
+		<item>return-object vAA</item>
+		<item>const/4 vA, 0xF</item>
+		<item>const/16 vAA, 0xFFFF</item>
+		<item>const vAA, 0xFFFFFFFF</item>
+		<item>const/high16 vAA, 0xFFFF</item>
+		<item>const-wide/16 vAA, 0xFFFF</item>
+		<item>const-wide/32 vAA, 0xFFFFFFFF</item>
+		<item>const-wide vAA, #FFFFFFFFFFFFFFFF</item>
+		<item>const-wide/high16 vAA, 0xFFFF</item>
+		<item>const-string vAA, string</item>
+		<item>const-string/jumbo vAA, string (32-bit index)</item>
+		<item>const-class vAA, type</item>
+		<item>monitor-enter vAA</item>
+		<item>monitor-exit vAA</item>
+		<item>check-cast vAA, type</item>
+		<item>instance-of vA, vB, type</item>
+		<item>array-length vA, vB</item>
+		<item>new-instance vAA, type</item>
+		<item>new-array vA, vB, type</item>
+		<item>filled-new-array {vC, vD, vE, vF, vG}, type</item>
+		<item>filled-new-array/range {vCCCC .. vNNNN}, type</item>
+		<item>fill-array-data vAA, :array</item>
+		<item>throw vAA</item>
+		<item>goto :goto_XX</item>
+		<item>goto/16 :goto_XXXX</item>
+		<item>goto/32 :goto_XXXXXXXX</item>
+		<item>packed-switch vAA, :pswitch_data</item>
+		<item>sparse-switch vAA, :sswitch_data</item>
+		<item>cmpl-float vAA, vBB, vCC</item>
+		<item>cmpg-float vAA, vBB, vCC</item>
+		<item>cmpl-double vAA, vBB, vCC</item>
+		<item>cmpg-double vAA, vBB, vCC</item>
+		<item>cmp-long vAA, vBB, vCC</item>
+		<item>if-eq vA, vB, :cond_XXXX</item>
+		<item>if-ne vA, vB, :cond_XXXX</item>
+		<item>if-lt vA, vB, :cond_XXXX</item>
+		<item>if-le vA, vB, :cond_XXXX</item>
+		<item>if-gt vA, vB, :cond_XXXX</item>
+		<item>if-ge vA, vB, :cond_XXXX</item>
+		<item>if-eqz vAA, :cond_XXXX</item>
+		<item>if-nez vAA, :cond_XXXX</item>
+		<item>if-ltz vAA, :cond_XXXX</item>
+		<item>if-lez vAA, :cond_XXXX</item>
+		<item>if-gtz vAA, :cond_XXXX</item>
+		<item>if-gez vAA, :cond_XXXX</item>
+		<item>aget vAA, vBB, vCC</item>
+		<item>aget-wide vAA, vBB, vCC</item>
+		<item>aget-object vAA, vBB, vCC</item>
+		<item>aget-boolean vAA, vBB, vCC</item>
+		<item>aget-byte vAA, vBB, vCC</item>
+		<item>aget-char vAA, vBB, vCC</item>
+		<item>aget-short vAA, vBB, vCC</item>
+		<item>aput vAA, vBB, vCC</item>
+		<item>aput-wide vAA, vBB, vCC</item>
+		<item>aput-object vAA, vBB, vCC</item>
+		<item>aput-boolean vAA, vBB, vCC</item>
+		<item>aput-byte vAA, vBB, vCC</item>
+		<item>aput-char vAA, vBB, vCC</item>
+		<item>aput-short vAA, vBB, vCC</item>
+		<item>iget vA, vB, fields</item>
+		<item>iget-wide vA, vB, fields</item>
+		<item>iget-object vA, vB, fields</item>
+		<item>iget-boolean vA, vB, fields</item>
+		<item>iget-byte vA, vB, field</item>
+		<item>iget-char vA, vB, field</item>
+		<item>iget-short vA, vB, fields</item>
+		<item>iput vA, vB, fields</item>
+		<item>iput-wide vA, vB, fields</item>
+		<item>iput-object vA, vB, fields</item>
+		<item>iput-boolean vA, vB, fields</item>
+		<item>iput-byte vA, vB, fields</item>
+		<item>iput-char vA, vB, fields</item>
+		<item>iput-short vA, vB, fields</item>
+		<item>sget vAA, static field</item>
+		<item>sget-wide vAA, static field</item>
+		<item>sget-object vAA, static field</item>
+		<item>sget-boolean vAA, static field</item>
+		<item>sget-byte vAA, static field</item>
+		<item>sget-char vAA, static field</item>
+		<item>sget-short vAA, static field</item>
+		<item>sput vAA, static field</item>
+		<item>sput-wide vAA, static field</item>
+		<item>sput-object vAA, static field</item>
+		<item>sput-boolean vAA, static field</item>
+		<item>sput-byte vAA, static field</item>
+		<item>sput-char vAA, static field</item>
+		<item>sput-short vAA, static field</item>
+		<item>invoke-virtual {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-super {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-direct {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-static {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-interface {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-virtual/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-super/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-direct/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-static/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-interface/range {vCCCC .. vNNNN}, method</item>
+		<item>neg-int vA, vB</item>
+		<item>not-int vA, vB</item>
+		<item>neg-long vA, vB</item>
+		<item>not-long vA, vB</item>
+		<item>neg-float vA, vB</item>
+		<item>neg-double vA, vB</item>
+		<item>int-to-long vA, vB</item>
+		<item>int-to-float vA, vB</item>
+		<item>int-to-double vA, vB</item>
+		<item>long-to-int vA, vB</item>
+		<item>long-to-float vA, vB</item>
+		<item>long-to-double vA, vB</item>
+		<item>float-to-int vA, vB</item>
+		<item>float-to-long vA, vB</item>
+		<item>float-to-double vA, vB</item>
+		<item>double-to-int vA, vB</item>
+		<item>double-to-long vA, vB</item>
+		<item>double-to-float vA, vB</item>
+		<item>int-to-byte vA, vB</item>
+		<item>int-to-char vA, vB</item>
+		<item>int-to-short vA, vB</item>
+		<item>add-int vAA, vBB, vCC</item>
+		<item>sub-int vAA, vBB, vCC</item>
+		<item>mul-int vAA, vBB, vCC</item>
+		<item>div-int vAA, vBB, vCC</item>
+		<item>rem-int vAA, vBB, vCC</item>
+		<item>and-int vAA, vBB, vCC</item>
+		<item>or-int vAA, vBB, vCC</item>
+		<item>xor-int vAA, vBB, vCC</item>
+		<item>shl-int vAA, vBB, vCC</item>
+		<item>shr-int vAA, vBB, vCC</item>
+		<item>ushr-int vAA, vBB, vCC</item>
+		<item>add-long vAA, vBB, vCC</item>
+		<item>sub-long vAA, vBB, vCC</item>
+		<item>mul-long vAA, vBB, vCC</item>
+		<item>div-long vAA, vBB, vCC</item>
+		<item>rem-long vAA, vBB, vCC</item>
+		<item>and-long vAA, vBB, vCC</item>
+		<item>or-long vAA, vBB, vCC</item>
+		<item>xor-long vAA, vBB, vCC</item>
+		<item>shl-long vAA, vBB, vCC</item>
+		<item>shr-long vAA, vBB, vCC</item>
+		<item>ushr-long vAA, vBB, vCC</item>
+		<item>add-float vAA, vBB, vCC</item>
+		<item>sub-float vAA, vBB, vCC</item>
+		<item>mul-float vAA, vBB, vCC</item>
+		<item>div-float vAA, vBB, vCC</item>
+		<item>rem-float vAA, vBB, vCC</item>
+		<item>add-double vAA, vBB, vCC</item>
+		<item>sub-double vAA, vBB, vCC</item>
+		<item>mul-double vAA, vBB, vCC</item>
+		<item>div-double vAA, vBB, vCC</item>
+		<item>rem-double vAA, vBB, vCC</item>
+		<item>add-int/2addr vA, vB</item>
+		<item>sub-int/2addr vA, vB</item>
+		<item>mul-int/2addr vA, vB</item>
+		<item>div-int/2addr vA, vB</item>
+		<item>rem-int/2addr vA, vB</item>
+		<item>and-int/2addr vA, vB</item>
+		<item>or-int/2addr vA, vB</item>
+		<item>xor-int/2addr vA, vB</item>
+		<item>shl-int/2addr vA, vB</item>
+		<item>shr-int/2addr vA, vB</item>
+		<item>ushr-int/2addr vA, vB</item>
+		<item>add-long/2addr vA, vB</item>
+		<item>sub-long/2addr vA, vB</item>
+		<item>mul-long/2addr vA, vB</item>
+		<item>div-long/2addr vA, vB</item>
+		<item>rem-long/2addr vA, vB</item>
+		<item>and-long/2addr vA, vB</item>
+		<item>or-long/2addr vA, vB</item>
+		<item>xor-long/2addr vA, vB</item>
+		<item>shl-long/2addr vA, vB</item>
+		<item>shr-long/2addr vA, vB</item>
+		<item>ushr-long/2addr vA, vB</item>
+		<item>add-float/2addr vA, vB</item>
+		<item>sub-float/2addr vA, vB</item>
+		<item>mul-float/2addr vA, vB</item>
+		<item>div-float/2addr vA, vB</item>
+		<item>rem-float/2addr vA, vB</item>
+		<item>add-double/2addr vA, vB</item>
+		<item>sub-double/2addr vA, vB</item>
+		<item>mul-double/2addr vA, vB</item>
+		<item>div-double/2addr vA, vB</item>
+		<item>rem-double/2addr vA, vB</item>
+		<item>add-int/lit16 vA, vB, 0xFFFF</item>
+		<item>rsub-int vA, vB, 0xFFFF</item>
+		<item>mul-int/lit16 vA, vB, 0xFFFF</item>
+		<item>div-int/lit16 vA, vB, 0xFFFF</item>
+		<item>rem-int/lit16 vA, vB, 0xFFFF</item>
+		<item>and-int/lit16 vA, vB, 0xFFFF</item>
+		<item>or-int/lit16 vA, vB, 0xFFFF</item>
+		<item>xor-int/lit16 vA, vB, 0xFFFF</item>
+		<item>add-int/lit8 vAA, vBB, 0xFF</item>
+		<item>rsub-int/lit8 vAA, vBB, 0xFF</item>
+		<item>mul-int/lit8 vAA, vBB, 0xFF</item>
+		<item>div-int/lit8 vAA, vBB, 0xFF</item>
+		<item>rem-int/lit8 vAA, vBB, 0xFF</item>
+		<item>and-int/lit8 vAA, vBB, 0xFF</item>
+		<item>or-int/lit8 vAA, vBB, 0xFF</item>
+		<item>xor-int/lit8 vAA, vBB, 0xFF</item>
+		<item>shl-int/lit8 vAA, vBB, 0xFF</item>
+		<item>shr-int/lit8 vAA, vBB, 0xFF</item>
+		<item>ushr-int/lit8 vAA, vBB, 0xFF</item>
+		<item>invoke-polymorphic {vC, vD, vE, vF, vG}, method, prototype</item>
+		<item>invoke-polymorphic/range {vCCCC .. vNNNN}, method, prototype</item>
+		<item>invoke-custom {vC, vD, vE, vF, vG}, call site</item>
+		<item>invoke-custom/range {vCCCC .. vNNNN}, call point</item>
+		<item>const-method-handle vAA, method handle</item>
+		<item>const-method-type vAA, method prototype</item>
+	</string-array>
 	<string-array name="smali_help_values" formatted="false">
 		<item>A vA egy 4 bites regiszter v0 - v15 értéktartománnyal\nA vAA egy 8 bites regiszter, amelynek értéktartománya v0 - v255\nA vAAAA egy 16 bites regiszter, amelynek értéktartománya v0 - v65535</item>
 		<item>0xF, 0xFF stb. szó szerinti értékek megjelenítésére. A regiszterekhez hasonlóan az F szám értéktartományt jelöl, például:\nA 0xF értékek tartományát a [-0x8, 0x7] jelenti\nA 0xFF értéktartományát a [-0x80, 0x7F] jelképezi</item>
@@ -234,23 +460,94 @@
 		<item>Hivatkozást helyez el egy metódusleíróra a vAA regiszterben. A 039-es verzió óta jelen van a Dex-fájlokban.</item>
 		<item>Hivatkozást helyez el a metódus prototípusára a vAA regiszterben. A 039-es verzió óta jelen van a Dex-fájlokban.</item>
 	</string-array>
-	<string-array name="copy_variants">
+    <string-array name="aapt2_dump">
+        <item>badging</item>
+        <item>configurations</item>
+        <item>permissions</item>
+        <item>strings</item>
+        <item>resources</item>
+        <item>overlayable</item>
+    </string-array>
+    <string-array name="aapt2_dump_descr">
+        <item>Az APK jegyzékfájljából (manifest) kinyomtatott információk nyomtatása.</item>
+        <item>Az APK-ban lévő forráskészlet által használt összes konfiguráció kinyomtatása.</item>
+        <item>Az APK jegyzékfájljából (manifest) kinyert engedélyek kinyomtatása.</item>
+        <item>Az APK-ban lévő erőforrástábla karakterlánc tartalmának kinyomtatása.</item>
+        <item>Az erőforrástábla tartalmának kinyomtatása az APK-ból.</item>
+        <item>Egy APK &amp;lt;átfedhető&amp;gt; forráskészleteinek kinyomtatása.</item>
+    </string-array>
+    <string-array name="app_theme">
+        <item>Világos</item>
+        <item>Sötét</item>
+        <item>Fekete</item>
+    </string-array>
+    <string-array name="app_theme_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="jadx_sets">
+        <item>Visszalépési mód</item>
+        <item>Visszafejtés</item>
+        <item>Escape Unicode karakterek</item>
+        <item>Inkonzisztens kód megjelenítése</item>
+    </string-array>
+    <string-array name="jadx_sets_keys">
+        <item>jadx_fallback</item>
+        <item>jadx_deobfuscation</item>
+        <item>jadx_unicode</item>
+        <item>jadx_inconsistent</item>
+    </string-array>
+    <string-array name="copy_variants">
         <item>Átnevezés</item>
 		<item>Csak a fájlok átnevezése</item>
         <item>Csere</item>
         <item>Kihagyás</item>
     </string-array>
-	<string-array name="menu_pos">
+    <string-array name="menu_pos">
         <item>Balra</item>
         <item>Jobbra</item>
     </string-array>
-	<string-array name="checksum_names">
+    <string-array name="menu_pos_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="file_size">
+        <item>1 KiB = 1024 B</item>
+        <item>1 kB = 1000 B</item>
+    </string-array>
+    <string-array name="file_size_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="checksum_names">
         <item>Csupa nagybetű</item>
         <item>Elválasztás kettősponttal</item>
     </string-array>
-	<string-array name="refresh_res">
+    <string-array name="checksum_keys">
+        <item>checksum_upper</item>
+        <item>checksum_separate</item>
+    </string-array>
+    <string-array name="tooltips_names">
+        <item>Smali</item>
+        <item>XML</item>
+    </string-array>
+    <string-array name="tooltips_keys">
+        <item>tooltips_smali</item>
+        <item>tooltips_xml</item>
+    </string-array>
+    <string-array name="refresh_res">
         <item>Új forráskészletek hozzáadása (csak fájlok)</item>
         <item>Hiányzó forráskészletek törlése</item>
+    </string-array>
+    <string-array name="charsets">
+        <item>UTF-8</item>
+        <item>UTF-16</item>
+        <item>UTF-16LE</item>
+        <item>UTF-16BE</item>
+        <item>US-ASCII</item>
+        <item>ISO-8859-1</item>
+        <item>CP1251</item>
     </string-array>
     <string-array name="sort">
         <item>Név</item>
@@ -262,7 +559,7 @@
         <item>Idő</item>
         <item>Idő megfordítása</item>
     </string-array>
-	<string-array name="color_var">
+    <string-array name="color_var">
         <item>HEX-szín</item>
         <item>Smali kód</item>
         <item>A,R,G,B</item>
@@ -273,173 +570,488 @@
         <item>@string/bks</item>
         <item>@string/pk8</item>
     </string-array>
-	<string-array name="resDecodeMode">
-		<item>Nincs visszafejtés</item>
-		<item>Visszafejtés a fő könyvtárba</item>
-		<item>Visszafejtés egy különálló könyvtárba</item>
-	</string-array>
-	<string-array name="converter_items">
-		<item>Szöveg &lt;-> Base64</item>
-		<item>Szöveg &lt;-> Unicode</item>
-		<item>Szöveg &lt;-> URL kódolás</item>
-		<item>Szöveg &lt;-> MD5</item>
-		<item>Szöveg &lt;-> SHA-1</item>
-		<item>Szöveg &lt;-> SHA-224</item>
-		<item>Szöveg &lt;-> SHA-256</item>
-		<item>Szöveg &lt;-> SHA-384</item>
-		<item>Szöveg &lt;-> SHA-512</item>
-		<item>Szöveg &lt;-> Tömb (UTF-8)</item>
-		<item>Szöveg &lt;-> Tömb (UTF-16)</item>
-		<item>Szöveg &lt;-> Tömb (UTF-16LE)</item>
-		<item>Szöveg &lt;-> Tömb (UTF-16BE)</item>
-		<item>Szöveg &lt;-> Tömb (US-ASCII)</item>
-		<item>Szöveg &lt;-> Tömb (ISO-8859-1)</item>
-		<item>Szöveg &lt;-> Tömb (CP1251)</item>
-		<item>Decimális &lt;-> Bináris</item>
-		<item>Decimális &lt;-> Oktális</item>
-		<item>Decimális &lt;-> Hex</item>
-		<item>Decimális &lt;-> Hex (0x0)</item>
-		<item>Decimális &lt;-> Hex (0x00000000)</item>
-		<item>Lebegő &lt;-> Bináris</item>
-		<item>Lebegő &lt;-> Oktális</item>
-		<item>Lebegő &lt;-> Hex</item>
-		<item>Lebegő &lt;-> Hex (0x0)</item>
-		<item>Lebegő &lt;-> Hex (0x00000000)</item>
-		<item>Szín &lt;-> Smali</item>
-		<item>Szín &lt;-> Decimális</item>
+    <string-array name="keys">
+        <item>editorkey</item>
+        <item>media</item>
+        <item>platform</item>
+        <item>shared</item>
+        <item>testkey</item>
+    </string-array>
+    <string-array name="keys_hash">
+        <item>1817397831</item>
+        <item>3661058070</item>
+        <item>1463045784</item>
+        <item>2725691727</item>
+        <item>4152456470</item>
+    </string-array>
+    <string-array name="quantity_items">
+        <item>zero</item>
+        <item>one</item>
+        <item>two</item>
+        <item>few</item>
+        <item>many</item>
+        <item>other</item>
+    </string-array>
+    <string-array name="resDecodeMode">
+        <item>Nincs visszafejtés</item>
+        <item>Visszafejtés a fő könyvtárba</item>
+        <item>Visszafejtés egy különálló könyvtárba</item>
+    </string-array>
+    <string-array name="converter_items">
+	<item>Szöveg &lt;-> Base64</item>
+	<item>Szöveg &lt;-> Unicode</item>
+	<item>Szöveg &lt;-> URL kódolás</item>
+	<item>Szöveg &lt;-> MD5</item>
+	<item>Szöveg &lt;-> SHA-1</item>
+	<item>Szöveg &lt;-> SHA-224</item>
+	<item>Szöveg &lt;-> SHA-256</item>
+	<item>Szöveg &lt;-> SHA-384</item>
+	<item>Szöveg &lt;-> SHA-512</item>
+	<item>Szöveg &lt;-> Tömb (UTF-8)</item>
+	<item>Szöveg &lt;-> Tömb (UTF-16)</item>
+	<item>Szöveg &lt;-> Tömb (UTF-16LE)</item>
+	<item>Szöveg &lt;-> Tömb (UTF-16BE)</item>
+	<item>Szöveg &lt;-> Tömb (US-ASCII)</item>
+	<item>Szöveg &lt;-> Tömb (ISO-8859-1)</item>
+	<item>Szöveg &lt;-> Tömb (CP1251)</item>
+	<item>Decimális &lt;-> Bináris</item>
+	<item>Decimális &lt;-> Oktális</item>
+	<item>Decimális &lt;-> Hex</item>
+	<item>Decimális &lt;-> Hex (0x0)</item>
+	<item>Decimális &lt;-> Hex (0x00000000)</item>
+	<item>Lebegő &lt;-> Bináris</item>
+	<item>Lebegő &lt;-> Oktális</item>
+	<item>Lebegő &lt;-> Hex</item>
+	<item>Lebegő &lt;-> Hex (0x0)</item>
+	<item>Lebegő &lt;-> Hex (0x00000000)</item>
+	<item>Szín &lt;-> Smali</item>
+	<item>Szín &lt;-> Decimális</item>
         <item>Szín &lt;-> A,R,G,B</item>
-	</string-array>
-	<string-array name="installLocation">
+    </string-array>
+    <string-array name="installLocation">
 		<item>Nincs beállítva</item>
         <item>Automatikus</item>
         <item>Csak belső</item>
         <item>Preferált külső</item>
     </string-array>
-	<string-array name="xml_format_variants">
-		<item>Alapértelmezett</item>
-		<item>Apktool</item> 
-		<item>Android Studio</item>
-		<item>Egyszerű trükk</item>
-	</string-array>
-	<string-array name="orientation_variants">
-		<item>Alapértelmezett</item>
-		<item>Fekvő</item> 
-		<item>Álló</item>
-	</string-array>
-	<string-array name="auto_save_variants">
-		<item>Ki</item>
-		<item>15 másodperc</item> 
-		<item>30 másodperc</item>
-		<item>1 perc</item> 
-		<item>5 perc</item>
-	</string-array>
-	<string-array name="to_vector_values">
-		<item>Adaptált kép (gyengébb minőség)</item>
-		<item>Kiváló minőségű kép (nagyobb méret)</item>
-		<item>Átalakítás SVG-re</item>
-	</string-array>
-	<string-array name="backup_values">
-		<item>Beállítások</item>
-		<item>Könyvjelzők</item>
-        <item>Előzmények keresése/cseréje</item>
-		<item>Szótárak</item>
+    <string-array name="algorithmsArray">
+		<item>MD5 RSA-val</item>
+        <item>SHA1 RSA-val</item>
+        <item>SHA224 RSA-val</item>
+        <item>SHA256 RSA-val</item>
+        <item>SHA384 RSA-val</item>
+        <item>SHA512 RSA-val</item>
     </string-array>
-	<string-array name="editor_themes">
-		<item>Alapértelmezett</item>
-		<item>Új</item> 
-	</string-array>
-	<string-array name="bing_translator_names">
-		<item>Automatikus</item>
-		<item>Azerbajdzsáni (latin)</item>
-		<item>Albán</item>
-		<item>Angol</item>
-		<item>Arab</item>
-		<item>Örmény</item>
-		<item>Afrikai</item>
-		<item>Bengáli</item>
-		<item>Bolgár</item>
-		<item>Bosnyák</item>
-		<item>Walesi</item>
-		<item>Magyar</item>
-		<item>Vietnámi</item>
-		<item>Haiti kreol</item>
-		<item>Holland</item>
-		<item>Görög</item>
-		<item>Gudzsaráti</item>
-		<item>Dán</item>
-		<item>Héber</item>
-		<item>Indonéz</item>
-		<item>Ír</item>
-		<item>Izlandi</item>
-		<item>Spanyol</item>
-		<item>Olasz</item>
-		<item>Kazah</item>
-		<item>Kannada</item>
-		<item>Kantoni hagyományos</item>
-		<item>Katalán</item>
-		<item>Keretarian Otomi</item>
-		<item>Hagyományos kínai</item>
-		<item>Egyszerűsített kínai</item>
-		<item>Koreai</item>
-		<item>Lett</item>
-		<item>Litván</item>
-		<item>Madagaszkári</item>
-		<item>Maláj</item>
-		<item>Malajálam</item>
-		<item>Máltai</item>
-		<item>Új-zélandi bennszülött</item>
-		<item>Maráti</item>
-		<item>Német</item>
-		<item>Nepáli</item>
-		<item>Norvég</item>
-		<item>Orijá</item>
-		<item>Pandzsábi</item>
-		<item>Perzsa</item>
-		<item>Lengyel</item>
-		<item>Portugál (Brazília)</item>
-		<item>Portugál (Portugália)</item>
-		<item>Román</item>
-		<item>Orosz</item>
-		<item>Szamoa</item>
-		<item>Szerb (cirill)</item>
-		<item>Szerb (latin)</item>
-		<item>Szlovák</item>
-		<item>Szlovén</item>
-		<item>Szuahéli</item>
-		<item>Tahiti</item>
-		<item>Thaiföldi</item>
-		<item>Tamil</item>
-		<item>Telugu</item>
-		<item>Tonga</item>
-		<item>Török</item>
-		<item>Ukrán</item>
-		<item>Urdu</item>
-		<item>Fidzsi</item>
-		<item>Fülöp-szigetek</item>
-		<item>Finn</item>
-		<item>Francia</item>
-		<item>Hindi</item>
-		<item>Hmong Dhow</item>
-		<item>Horvát</item>
-		<item>Cseh</item>
-		<item>Svéd</item>
-		<item>Észt</item>
-		<item>Yucatec Maya</item>
-		<item>Japán</item>
-		<item>Amhara</item>
-		<item>Asszámi</item>
-		<item>Dari</item>
-		<item>Francia (Kanada)</item>
-		<item>Inuktitut</item>
-		<item>Kmer</item>
-		<item>Klingon (Latin)</item>
-		<item>Kurd (közép)</item>
-		<item>Kurd (északi)</item>
-		<item>Laoszi</item>
-		<item>Mianmar (Burmai)</item>
-		<item>Pastu</item>
-		<item>Tigrinya</item>
-	</string-array>
+	<string-array name="entries_lang">
+        <item>Orosz</item>
+        <item>Ukrán</item>
+        <item>Magyar</item>
+        <item>Görög</item>
+        <item>Francia</item>
+        <item>Német</item>
+        <item>Litván</item>
+        <item>Olasz</item>
+        <item>Mianmari</item>
+        <item>Kínai</item>
+        <item>Portugál</item>
+        <item>Román</item>
+        <item>Török</item>
+        <item>Cseh</item>
+        <item>Vietnami</item>
+        <item>Bolgár</item>
+        <item>Farsi</item>
+        <item>Arab</item>
+        <item>Albán</item>
+        <item>Koreai</item>
+        <item>Spanyol</item>
+        <item>Indonéz</item>
+        <item>Héber</item>
+        <item>Magyar</item>
+    </string-array>
+    <string-array name="values_lang">
+        <item>ru</item>
+        <item>uk</item>
+        <item>en</item>
+        <item>el</item>
+        <item>fr</item>
+        <item>de</item>
+        <item>lt</item>
+        <item>it</item>
+        <item>my</item>
+        <item>zh</item>
+        <item>pt</item>
+        <item>ro</item>
+        <item>tr</item>
+        <item>cs</item>
+        <item>vi</item>
+        <item>bg</item>
+        <item>fa</item>
+        <item>ar</item>
+        <item>sq</item>
+        <item>ko</item>
+        <item>es</item>
+        <item>in</item>
+        <item>he</item>
+        <item>hu</item>
+    </string-array>
+    <string-array name="date_variants">
+        <item>yyyy/MM/dd HH:mm</item>
+        <item>dd/MM/yyyy HH:mm</item>
+        <item>HH:mm yyyy/MM/dd</item>
+        <item>HH:mm dd/MM/yyyy</item>
+    </string-array>
+    <string-array name="xml_format_variants">
+        <item>Alapértelmezett</item>
+        <item>Apktool</item> 
+        <item>Android Studio</item>
+        <item>Egyszerű trükk</item>
+    </string-array>
+    <string-array name="xml_format_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="orientation_variants">
+        <item>Alapértelmezett</item>
+        <item>Fekvő</item> 
+        <item>Álló</item>
+    </string-array>
+    <string-array name="orientation_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="auto_save_variants">
+        <item>Ki</item>
+        <item>15 másodperc</item> 
+        <item>30 másodperc</item>
+        <item>1 perc</item> 
+        <item>5 perc</item>
+    </string-array>
+    <string-array name="auto_save_values">
+        <item>0</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>300</item>
+    </string-array>
+    <string-array name="to_vector_values">
+        <item>Adaptált kép (gyengébb minőség)</item>
+        <item>Kiváló minőségű kép (nagyobb méret)</item>
+        <item>Átalakítás SVG-re</item>
+    </string-array>
+    <string-array name="backup_values">
+        <item>Beállítások</item>
+        <item>Könyvjelzők</item>
+        <item>Előzmények keresése/cseréje</item>
+        <item>Szótárak</item>
+    </string-array>
+    <string-array name="editor_themes">
+        <item>Alapértelmezett</item>
+        <item>Új</item> 
+    </string-array>
+    <string-array name="editor_themes_values">
+        <item>alapértelmezett</item>
+        <item>új</item> 
+    </string-array>
+    <string-array name="bing_translator_codes">
+        <item>Automatikus felismerés</item>
+        <item>az</item>
+        <item>sq</item>
+        <item>en</item>
+        <item>ar</item>
+        <item>hy</item>
+        <item>af</item>
+        <item>bn</item>
+        <item>bg</item>
+        <item>bs</item>
+        <item>cy</item>
+        <item>hu</item>
+        <item>vi</item>
+        <item>ht</item>
+        <item>nl</item>
+        <item>el</item>
+        <item>gu</item>
+        <item>da</item>
+        <item>he</item>
+        <item>id</item>
+        <item>ga</item>
+        <item>is</item>
+        <item>es</item>
+        <item>it</item>
+        <item>kk</item>
+        <item>kn</item>
+        <item>yue</item>
+        <item>ca</item>
+        <item>otq</item>
+        <item>zh-Hant</item>
+        <item>zh-Hans</item>
+        <item>ko</item>
+        <item>lv</item>
+        <item>lt</item>
+        <item>mg</item>
+        <item>ms</item>
+        <item>ml</item>
+        <item>mt</item>
+        <item>mi</item>
+        <item>mr</item>
+        <item>de</item>
+        <item>ne</item>
+        <item>nb</item>
+        <item>or</item>
+        <item>pa</item>
+        <item>fa</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>pt-PT</item>
+        <item>ro</item>
+        <item>ru</item>
+        <item>sm</item>
+        <item>sr-Cyrl</item>
+        <item>sr-Latn</item>
+        <item>sk</item>
+        <item>sl</item>
+        <item>sw</item>
+        <item>ty</item>
+        <item>th</item>
+        <item>ta</item>
+        <item>te</item>
+        <item>to</item>
+        <item>tr</item>
+        <item>uk</item>
+        <item>ur</item>
+        <item>fj</item>
+        <item>fil</item>
+        <item>fi</item>
+        <item>fr</item>
+        <item>hi</item>
+        <item>mww</item>
+        <item>hr</item>
+        <item>cs</item>
+        <item>sv</item>
+        <item>et</item>
+        <item>yua</item>
+        <item>ja</item>
+        <item>am</item>
+        <item>as</item>
+        <item>prs</item>
+        <item>fr-CA</item>
+        <item>iu</item>
+        <item>km</item>
+        <item>tlh-Latn</item>
+        <item>ku</item>
+        <item>kmr</item>
+        <item>lo</item>
+        <item>my</item>
+        <item>ps</item>
+        <item>ti</item>
+    </string-array>
+    <string-array name="bing_translator_names">
+        <item>Automatikus</item>
+        <item>Azerbajdzsáni (latin)</item>
+        <item>Albán</item>
+        <item>Angol</item>
+        <item>Arab</item>
+        <item>Örmény</item>
+        <item>Afrikai</item>
+        <item>Bengáli</item>
+        <item>Bolgár</item>
+        <item>Bosnyák</item>
+        <item>Walesi</item>
+        <item>Magyar</item>
+        <item>Vietnámi</item>
+        <item>Haiti kreol</item>
+        <item>Holland</item>
+        <item>Görög</item>
+        <item>Gudzsaráti</item>
+        <item>Dán</item>
+        <item>Héber</item>
+        <item>Indonéz</item>
+        <item>Ír</item>
+        <item>Izlandi</item>
+        <item>Spanyol</item>
+        <item>Olasz</item>
+        <item>Kazah</item>
+        <item>Kannada</item>
+        <item>Kantoni hagyományos</item>
+        <item>Katalán</item>
+        <item>Keretarian Otomi</item>
+        <item>Hagyományos kínai</item>
+	<item>Egyszerűsített kínai</item>
+	<item>Koreai</item>
+	<item>Lett</item>
+	<item>Litván</item>
+	<item>Madagaszkári</item>
+	<item>Maláj</item>
+	<item>Malajálam</item>
+	<item>Máltai</item>
+	<item>Új-zélandi bennszülött</item>
+	<item>Maráti</item>
+	<item>Német</item>
+	<item>Nepáli</item>
+	<item>Norvég</item>
+	<item>Orijá</item>
+	<item>Pandzsábi</item>
+	<item>Perzsa</item>
+	<item>Lengyel</item>
+	<item>Portugál (Brazília)</item>
+	<item>Portugál (Portugália)</item>
+	<item>Román</item>
+	<item>Orosz</item>
+	<item>Szamoa</item>
+	<item>Szerb (cirill)</item>
+	<item>Szerb (latin)</item>
+	<item>Szlovák</item>
+	<item>Szlovén</item>
+	<item>Szuahéli</item>
+	<item>Tahiti</item>
+	<item>Thaiföldi</item>
+	<item>Tamil</item>
+	<item>Telugu</item>
+	<item>Tonga</item>
+	<item>Török</item>
+	<item>Ukrán</item>
+	<item>Urdu</item>
+	<item>Fidzsi</item>
+	<item>Fülöp-szigetek</item>
+	<item>Finn</item>
+	<item>Francia</item>
+	<item>Hindi</item>
+	<item>Hmong Dhow</item>
+	<item>Horvát</item>
+	<item>Cseh</item>
+	<item>Svéd</item>
+	<item>Észt</item>
+	<item>Yucatec Maya</item>
+	<item>Japán</item>
+	<item>Amhara</item>
+	<item>Asszámi</item>
+	<item>Dari</item>
+	<item>Francia (Kanada)</item>
+	<item>Inuktitut</item>
+	<item>Kmer</item>
+	<item>Klingon (Latin)</item>
+	<item>Kurd (közép)</item>
+	<item>Kurd (északi)</item>
+        <item>Laoszi</item>
+        <item>Mianmar (Burmai)</item>
+        <item>Pastu</item>
+        <item>Tigrinya</item>
+    </string-array>
+    <string-array name="google_translator_codes">
+        <item>Automatikus</item>
+        <item>af</item>
+        <item>sq</item>
+        <item>am</item>
+        <item>ar</item>
+        <item>hy</item>
+        <item>az</item>
+        <item>eu</item>
+        <item>be</item>
+        <item>bn</item>
+        <item>bs</item>
+        <item>bg</item>
+        <item>ca</item>
+        <item>ceb</item>
+        <item>ny</item>
+        <item>zh-cn</item>
+        <item>zh-tw</item>
+        <item>co</item>
+        <item>hr</item>
+        <item>cs</item>
+        <item>da</item>
+        <item>nl</item>
+        <item>en</item>
+        <item>eo</item>
+        <item>et</item>
+        <item>tl</item>
+        <item>fi</item>
+        <item>fr</item>
+        <item>fy</item>
+        <item>gl</item>
+        <item>ka</item>
+        <item>de</item>
+        <item>el</item>
+        <item>gu</item>
+        <item>ht</item>
+        <item>ha</item>
+        <item>haw</item>
+        <item>iw</item>
+        <item>hi</item>
+        <item>hmn</item>
+        <item>hu</item>
+        <item>is</item>
+        <item>ig</item>
+        <item>id</item>
+        <item>ga</item>
+        <item>it</item>
+        <item>ja</item>
+        <item>jw</item>
+        <item>kn</item>
+        <item>kk</item>
+        <item>km</item>
+        <item>ko</item>
+        <item>ku</item>
+        <item>ky</item>
+        <item>lo</item>
+        <item>la</item>
+        <item>lv</item>
+        <item>lt</item>
+        <item>lb</item>
+        <item>mk</item>
+        <item>mg</item>
+        <item>ms</item>
+        <item>ml</item>
+        <item>mt</item>
+        <item>mi</item>
+        <item>mr</item>
+        <item>mn</item>
+        <item>my</item>
+        <item>ne</item>
+        <item>no</item>
+        <item>ps</item>
+        <item>fa</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>ma</item>
+        <item>ro</item>
+        <item>ru</item>
+        <item>sm</item>
+        <item>gd</item>
+        <item>sr</item>
+        <item>st</item>
+        <item>sn</item>
+        <item>sd</item>
+        <item>si</item>
+        <item>sk</item>
+        <item>sl</item>
+        <item>so</item>
+        <item>es</item>
+        <item>su</item>
+        <item>sw</item>
+        <item>sv</item>
+        <item>tg</item>
+        <item>ta</item>
+        <item>te</item>
+        <item>th</item>
+        <item>tr</item>
+        <item>uk</item>
+        <item>ur</item>
+        <item>uz</item>
+        <item>vi</item>
+        <item>cy</item>
+        <item>xh</item>
+        <item>yi</item>
+        <item>yo</item>
+        <item>zu</item>
+        <item>or</item>
+        <item>pa</item>
+        <item>rw</item>
+        <item>tt</item>
+        <item>tk</item>
+        <item>ug</item>
+    </string-array>
     <string-array name="google_translator_names">
         <item>Automatikus</item>
         <item>Afrikai</item>
@@ -553,106 +1165,208 @@
         <item>Türkmén</item>
         <item>Uigur</item>
     </string-array>
-	<string-array name="yandex_translator_names">
-		<item>Automatikus</item>
-		<item>Afrikai</item>
-		<item>Albán</item>
-		<item>Amhara</item>
-		<item>Arab</item>
-		<item>Örmény</item>
-		<item>Azerbajdzsán</item>
-		<item>Baskír</item>
-		<item>Baszk</item>
-		<item>Belarusz</item>
-		<item>Bengáli</item>
-		<item>Bosnyák</item>
-		<item>Bolgár</item>
-		<item>Burmai</item>
-		<item>Katalán</item>
-		<item>Cebui</item>
-		<item>Kínai</item>
-		<item>Csuvas</item>
-		<item>Horvát</item>
-		<item>Cseh</item>
-		<item>Dán</item>
-		<item>Holland</item>
-		<item>Elvis (Szindarin)</item>
-		<item>Emoji</item>
-		<item>Angol</item>
-		<item>Eszperantó</item>
-		<item>Észt</item>
-		<item>Finn</item>
-		<item>Francia</item>
-		<item>Galíciai</item>
-		<item>Grúz</item>
-		<item>Német</item>
-		<item>Görög</item>
-		<item>Gudzsaráti</item>
-		<item>Haiti</item>
-		<item>Héber</item>
-		<item>Hill Mari</item>
-		<item>Hindi</item>
-		<item>Magyar</item>
-		<item>Izlandi</item>
-		<item>Indonéz</item>
-		<item>Ír</item>
-		<item>Olasz</item>
-		<item>Japán</item>
-		<item>Jávai</item>
-		<item>Kannada</item>
-		<item>Kazah</item>
-		<item>Kazah (Latin)</item>
-		<item>Kmer</item>
-		<item>Koreai</item>
-		<item>Kirgiz</item>
-		<item>Laoszi</item>
-		<item>Latin</item>
-		<item>Lett</item>
-		<item>Litván</item>
-		<item>Luxemburgi</item>
-		<item>Makedón</item>
-		<item>Madagaszkári</item>
-		<item>Maláj</item>
-		<item>Malajálam</item>
-		<item>Máltai</item>
-		<item>Új-zélandi bennszülött</item>
-		<item>Maráti</item>
-		<item>Mari</item>
-		<item>Mongol</item>
-		<item>Nepáli</item>
-		<item>Norvég</item>
-		<item>Papiamentó</item>
-		<item>Perzsa</item>
-		<item>Lengyel</item>
-		<item>Portugál</item>
-		<item>Pandzsábi</item>
-		<item>Román</item>
-		<item>Orosz</item>
-		<item>Skót kelta</item>
-		<item>Szerb</item>
-		<item>Szingaléz</item>
-		<item>Szlovák</item>
-		<item>Szlovén</item>
-		<item>Spanyol</item>
-		<item>Sundanese</item>
-		<item>Szuahéli</item>
-		<item>Svéd</item>
-		<item>Tagalog</item>
-		<item>Tádzsik</item>
-		<item>Tamil</item>
-		<item>Tatár</item>
-		<item>Telugu</item>
-		<item>Thaiföldi</item>
-		<item>Török</item>
-		<item>Udmurt</item>
-		<item>Ukrán</item>
-		<item>Urdu</item>
-		<item>Üzbég</item>
-		<item>Üzbég (cirill)</item>
-		<item>Vietnámi</item>
-		<item>Walesi</item>
-		<item>Xhosa</item>
-		<item>Jakut</item>
-		<item>Jiddis</item>
-	</string-array>
+    <string-array name="yandex_translator_codes">
+        <item>Automatikus</item>
+        <item>af</item>
+        <item>sq</item>
+        <item>am</item>
+        <item>ar</item>
+        <item>hy</item>
+        <item>az</item>
+        <item>ba</item>
+        <item>eu</item>
+        <item>be</item>
+        <item>bn</item>
+        <item>bs</item>
+        <item>bg</item>
+        <item>my</item>
+        <item>ca</item>
+        <item>ceb</item>
+        <item>zh</item>
+        <item>cv</item>
+        <item>hr</item>
+        <item>cs</item>
+        <item>da</item>
+        <item>nl</item>
+        <item>sjn</item>
+        <item>emj</item>
+        <item>en</item>
+        <item>eo</item>
+        <item>et</item>
+        <item>fi</item>
+        <item>fr</item>
+        <item>gl</item>
+        <item>ka</item>
+        <item>de</item>
+        <item>el</item>
+        <item>gu</item>
+        <item>ht</item>
+        <item>he</item>
+        <item>mrj</item>
+        <item>hi</item>
+        <item>hu</item>
+        <item>is</item>
+        <item>id</item>
+        <item>ga</item>
+        <item>it</item>
+        <item>ja</item>
+        <item>jv</item>
+        <item>kn</item>
+        <item>kk</item>
+        <item>kazlat</item>
+        <item>km</item>
+        <item>ko</item>
+        <item>ky</item>
+        <item>lo</item>
+        <item>la</item>
+        <item>lv</item>
+        <item>lt</item>
+        <item>lb</item>
+        <item>mk</item>
+        <item>mg</item>
+        <item>ms</item>
+        <item>ml</item>
+        <item>mt</item>
+        <item>mi</item>
+        <item>mr</item>
+        <item>mhr</item>
+        <item>mn</item>
+        <item>ne</item>
+        <item>no</item>
+        <item>pap</item>
+        <item>fa</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>pa</item>
+        <item>ro</item>
+        <item>ru</item>
+        <item>gd</item>
+        <item>sr</item>
+        <item>si</item>
+        <item>sk</item>
+        <item>sl</item>
+        <item>es</item>
+        <item>su</item>
+        <item>sw</item>
+        <item>sv</item>
+        <item>tl</item>
+        <item>tg</item>
+        <item>ta</item>
+        <item>tt</item>
+        <item>te</item>
+        <item>th</item>
+        <item>tr</item>
+        <item>udm</item>
+        <item>uk</item>
+        <item>ur</item>
+        <item>uz</item>
+        <item>uzbcyr</item>
+        <item>vi</item>
+        <item>cy</item>
+        <item>xh</item>
+        <item>sah</item>
+        <item>yi</item>
+    </string-array>
+    <string-array name="yandex_translator_names">
+        <item>Automatikus</item>
+	<item>Afrikai</item>
+	<item>Albán</item>
+	<item>Amhara</item>
+	<item>Arab</item>
+	<item>Örmény</item>
+	<item>Azerbajdzsán</item>
+	<item>Baskír</item>
+	<item>Baszk</item>
+	<item>Belarusz</item>
+	<item>Bengáli</item>
+	<item>Bosnyák</item>
+	<item>Bolgár</item>
+	<item>Burmai</item>
+	<item>Katalán</item>
+	<item>Cebui</item>
+	<item>Kínai</item>
+	<item>Csuvas</item>
+	<item>Horvát</item>
+	<item>Cseh</item>
+	<item>Dán</item>
+	<item>Holland</item>
+	<item>Elvis (Szindarin)</item>
+	<item>Emoji</item>
+	<item>Angol</item>
+	<item>Eszperantó</item>
+	<item>Észt</item>
+	<item>Finn</item>
+	<item>Francia</item>
+	<item>Galíciai</item>
+	<item>Grúz</item>
+	<item>Német</item>
+	<item>Görög</item>
+	<item>Gudzsaráti</item>
+	<item>Haiti</item>
+	<item>Héber</item>
+	<item>Hill Mari</item>
+	<item>Hindi</item>
+	<item>Magyar</item>
+	<item>Izlandi</item>
+	<item>Indonéz</item>
+	<item>Ír</item>
+	<item>Olasz</item>
+	<item>Japán</item>
+	<item>Jávai</item>
+	<item>Kannada</item>
+	<item>Kazah</item>
+	<item>Kazah (Latin)</item>
+	<item>Kmer</item>
+	<item>Koreai</item>
+	<item>Kirgiz</item>
+	<item>Laoszi</item>
+	<item>Latin</item>
+	<item>Lett</item>
+	<item>Litván</item>
+	<item>Luxemburgi</item>
+	<item>Makedón</item>
+	<item>Madagaszkári</item>
+	<item>Maláj</item>
+	<item>Malajálam</item>
+	<item>Máltai</item>
+	<item>Új-zélandi bennszülött</item>
+	<item>Maráti</item>
+	<item>Mari</item>
+	<item>Mongol</item>
+	<item>Nepáli</item>
+	<item>Norvég</item>
+	<item>Papiamentó</item>
+	<item>Perzsa</item>
+	<item>Lengyel</item>
+	<item>Portugál</item>
+	<item>Pandzsábi</item>
+	<item>Román</item>
+	<item>Orosz</item>
+	<item>Skót kelta</item>
+	<item>Szerb</item>
+	<item>Szingaléz</item>
+	<item>Szlovák</item>
+	<item>Szlovén</item>
+	<item>Spanyol</item>
+	<item>Sundanese</item>
+	<item>Szuahéli</item>
+	<item>Svéd</item>
+	<item>Tagalog</item>
+	<item>Tádzsik</item>
+	<item>Tamil</item>
+	<item>Tatár</item>
+	<item>Telugu</item>
+	<item>Thaiföldi</item>
+	<item>Török</item>
+	<item>Udmurt</item>
+	<item>Ukrán</item>
+	<item>Urdu</item>
+	<item>Üzbég</item>
+	<item>Üzbég (cirill)</item>
+	<item>Vietnámi</item>
+	<item>Walesi</item>
+	<item>Xhosa</item>
+	<item>Jakut</item>
+	<item>Jiddis</item>
+    </string-array>
 </resources>
